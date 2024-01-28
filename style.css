@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  background: whitesmoke;
+  letter-spacing: 5px;
+  text-align: center;
+}
+/* loader */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+.loader img {
+  position: fixed;
+  top: 50%;
+  right: 45%;
+}
+/* Image-Container */
+.image-contianer {
+  margin: 15px 30%;
+}
+.image-contianer img {
+  width: 100%;
+  margin-top: 10px;
+  height: 30rem;
+}
+
+/* Responsive for large device */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+  .image-contianer {
+    margin: 15% 2%;
+  }
+}
